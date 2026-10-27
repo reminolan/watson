@@ -45,6 +45,7 @@ set(SOURCE_PATH ${PROJECT_SOURCE_DIR}/source)
 set(SOURCES
   ${SOURCE_PATH}/w_time.h
   ${SOURCE_PATH}/w_display.h
+  ${SOURCE_PATH}/w_colors.h
   ${SOURCE_PATH}/w_main.h
   ${SOURCE_PATH}/watson.c)
 
