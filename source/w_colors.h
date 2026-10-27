@@ -137,7 +137,7 @@ static const Color COLOR_PERU = COLOR(205, 133, 63);
 static const Color COLOR_PINK = COLOR(255, 192, 203);
 static const Color COLOR_PLUM = COLOR(221, 160, 221);
 static const Color COLOR_POWDER_BLUE = COLOR(176, 224, 230);
-static const Color COLOR_PURPLE = COLOR(128, 0, 128, 255);
+static const Color COLOR_PURPLE = COLOR(128, 0, 128);
 static const Color COLOR_ROSY_BROWN = COLOR(188, 143, 143);
 static const Color COLOR_ROYAL_BLUE = COLOR(65, 105, 225);
 
