@@ -36,6 +36,7 @@ SDL_AppInit(void** app_state, int arguments_count, char** arguments_array)
   *app_state = SDL_calloc(sizeof(Display), 1);
 
   if (!(*app_state)) {
+    SDL_Log("out of memory!!!!");
     return SDL_APP_FAILURE;
   }
 
@@ -43,6 +44,7 @@ SDL_AppInit(void** app_state, int arguments_count, char** arguments_array)
 
   DisplayFlags display_flags = DISPLAY_INT_SCALE | DISPLAY_VSYNC;
   if (!InitDisplay(display, display_flags)) {
+    SDL_Log("InitDisplay returned false!!! %s", SDL_GetErrorString());
     return SDL_APP_FAILURE;
   }
 

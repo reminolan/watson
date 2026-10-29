@@ -87,6 +87,7 @@ static inline bool
 InitDisplay(Display* display, DisplayFlags flags)
 {
   if (!display) {
+    SetErrorString("display was null");
     return false;
   }
 
@@ -97,6 +98,8 @@ InitDisplay(Display* display, DisplayFlags flags)
                                              &display->window,
                                              &display->renderer);
   if (!created) {
+    SetErrorString("window or renderer creation failed; error = %s",
+                   SDL_GetErrorString());
     return false;
   }
 
