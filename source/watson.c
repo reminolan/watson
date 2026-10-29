@@ -20,6 +20,7 @@
 
 #include <SDL3/SDL.h>
 
+#include "w_log.h"
 #include "w_time.h"
 #include "w_display.h"
 #include "w_colors.h"
